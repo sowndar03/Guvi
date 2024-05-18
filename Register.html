@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/Register.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/Register.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer-container">
+        <form class="form-container" id="myForm">
+            <h3>Register</h3>
+            <div class="input-container">
+                <input placeholder="Username" type="text" required name="name" id="name"/>
+                <i class="fas fa-user"></i>
+            </div>
+            <span class="error" id="nameError"></span>
+            <div class="input-container">
+                <input placeholder="Email" type="email" required name="email" id="email"/>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <span class="error" id="emailError"></span>
+            <div class="input-container">
+                <input placeholder="DOB" id="dateInput" type="text" required name="dob" id="dob"/>
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <span class="error" id="dobError"></span>
+            <div class="input-container">
+                <input placeholder="Password" type="password" required name="password" id="password" />
+                <i class="fas fa-lock"></i>
+            </div>
+            <span class="error" id="passwordError"></span>
+            <div class="input-container">
+                <input placeholder="Confirm Password" type="password" required name="cpassword" id="cpassword"/>
+                <i class="fas fa-lock"></i>
+            </div>
+            <span class="error" id="cpasswordError"></span>
+            <div class="sign-container"><a href="Login.html">Sign in?</a></div>
+            <span id="responseMessage"></span>
+            <div>
+                <button class="button-container" type="button" id="submitButton">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

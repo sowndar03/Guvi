@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/Profile.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/Profile.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="outer-container">
+            <form class="form-container" id="myForm">
+                <!-- <h3>Register</h3> -->
+                <div class="input-container">
+                    <input placeholder="Username" type="text" required name="name" id="name"/>
+                    <i class="fas fa-user"></i>
+                </div>
+                <span class="error" id="nameError"></span>
+                <div class="input-container">
+                    <input placeholder="Email" type="email" required name="email" id="email"/>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <span class="error" id="emailError"></span>
+                <div class="input-container">
+                    <input placeholder="Phone Number"  required name="phone" id="phone"/>
+                    <i class="fas fa-phone"></i>
+                </div>
+                <span class="error" id="phoneError"></span>
+                <div class="input-container">
+                    <input placeholder="Course"  required name="course" id="course"/>
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="error" id="courseError"></span>
+                <div class="input-container">
+                    <input placeholder="Branch"  required name="branch" id="branch"/>
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <span class="error" id="branchError"></span>
+                <span id="responseMessage"></span>
+                <div>
+                    <button class="button-container" type="button" id="submitButton">Add</button>
+                </div>
+            </form>
+        </div>
+        <div id="confetti-container"></div> 
+    </body>
+    </html>
